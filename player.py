@@ -23,7 +23,7 @@ class Player:
         self.int_player_def_pwr = random.randint(1,20)
         return self.int_player_def_pwr
     
-
+#Meta methods
 def set_player_name():
     return input(f"\nWhat is your name Warrior?\n")
 
