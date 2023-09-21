@@ -1,4 +1,10 @@
 #print("Gunna Gunna Gunna")
+import random
+
+def dice_roll():
+
+    dice_roll_outcome = random.randint(1,6)
+    return dice_roll_outcome
 
 def pvp(player_x, player_y, round_counter):
 

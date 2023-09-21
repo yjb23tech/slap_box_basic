@@ -21,8 +21,20 @@ def play():
 
     #Events that're looped to model actual gameplay
     while (fight_counter < 10):
-        funcs.pvp(player_1, player_2, fight_counter)
-        fight_counter += 1
+
+        dice_roll_result = funcs.dice_roll()
+
+        if ((dice_roll_result % 2) == 0):
+            print(f"{player_2.str_player_name} is on attack!")
+            print(f"{player_1.str_player_name} is on defence!")
+            funcs.pvp(player_2, player_1, fight_counter)
+        else:
+            print(f"{player_1.str_player_name} is on attack!")
+            print(f"{player_2.str_player_name} is on defence!")
+            funcs.pvp(player_1, player_2, fight_counter)
+        
+        fight_counter += 1 
+    
     print("\nAnd the winner is...\n")
 
 play()
