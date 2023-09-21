@@ -15,6 +15,11 @@ def pvp(player_x, player_y, round_counter):
         player_y.int_player_hp = player_y.int_player_hp - int_hp_damage
     elif (player_x.int_player_atk_pwr < player_y.int_player_def_pwr):
         print("Def wins\n")
+        int_hp_damage = player_y.int_player_def_pwr - player_x.int_player_atk_pwr 
+        print(f"Through sheer force of will {player_y.str_player_name} has defended and reversed the attack!")
+        print(f"{player_x.str_player_name} has been rebuffed and suffers damage of {int_hp_damage}")
+        print(f"{player_x.str_player_name} loses - {int_hp_damage} worth of hp")
+        player_x.int_player_hp = player_x.int_player_hp - int_hp_damage
     elif (player_x.int_player_atk_pwr == player_y.int_player_def_pwr):
         print("Tie Tie Tie\n")
     else:
