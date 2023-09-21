@@ -38,7 +38,7 @@ def play():
     while (fight_counter < 10):
         print(f"Round {fight_counter + 1}: FIGHT!")
         fight_counter += 1
-    print("And the winner is...\n")
+    print("\nAnd the winner is...\n")
 
 play()
 
