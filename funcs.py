@@ -16,10 +16,6 @@ def calc_winner(player_x, player_y):
         return battle_ranking
 
 
-
-
-
-
 def pvp(player_x, player_y, round_counter):
 
     #Declare the power of the attacking player; declare the power of the defending player
