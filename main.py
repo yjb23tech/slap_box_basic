@@ -21,7 +21,7 @@ def play():
 
     #Events that're looped to model actual gameplay
     while (fight_counter < 10):
-        funcs.pvp(player_1, player_2)
+        funcs.pvp(player_1, player_2, fight_counter)
         fight_counter += 1
     print("\nAnd the winner is...\n")
 
