@@ -8,10 +8,12 @@ def play():
     print("\nWelcome to the Slap Box World Championships! It's time to meet our combatants:")
 
     #Experimenting...
+    #It worked!
     player_1 = player.Player(player.set_player_name(), player.set_player_location(), player.set_player_age())
     print(f"\n{player_1}\n")
 
     #Experimenting
+    #It worked!
     player_2 = player.Player(player.set_player_name(), player.set_player_location(), player.set_player_age())
     print(f"\n{player_2}\n")
 
