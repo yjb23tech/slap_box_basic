@@ -21,8 +21,18 @@ def set_player_age():
     return int(input("\nAnd how old are you Warrior?\n"))
 
 #Main flow
-test_player = Player(set_player_name(), set_player_location(), set_player_age())
+def play():
+    #Events that only need to happen once
+    print("\nWelcome to the Slap Box World Championships! It's time to meet our combatants:")
 
-print("\nHello New World\n")
-print(test_player)
+    player_1 = Player(set_player_name(), set_player_location(), set_player_age())
+    print(f"\n{player_1}\n")
+
+    player_2 = Player(set_player_name(), set_player_location(), set_player_age())
+    print(f"\n{player_2}\n")
+
+    #Events that're looped to model actual gameplay
+
+
+play()
 
