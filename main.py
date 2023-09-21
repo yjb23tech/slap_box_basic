@@ -3,6 +3,7 @@ import random
 class Player:
 
     def __init__(self, str_player_name, str_player_location, int_player_age):
+
         self.str_player_name = str_player_name
         self.str_player_location = str_player_location
         self.int_player_age = int_player_age
@@ -31,8 +32,14 @@ def play():
     player_2 = Player(set_player_name(), set_player_location(), set_player_age())
     print(f"\n{player_2}\n")
 
-    #Events that're looped to model actual gameplay
+    fight_counter = 0 
 
+    #Events that're looped to model actual gameplay
+    while (fight_counter < 10):
+        print(f"Round {fight_counter + 1}: FIGHT!")
+        fight_counter += 1
+    print("And the winner is...\n")
 
 play()
+
 
