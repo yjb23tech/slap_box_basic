@@ -8,10 +8,21 @@ class Player:
         self.int_player_age = int_player_age
 
     def __str__(self):
-        return (f"Please welcome to the stage {self.str_player_name} from {self.str_player_location}")
+        return (f"Bio: Name ==> {self.str_player_name} Location ==> {self.str_player_location} Age ==> {self.int_player_age}")
 
-test_player = Player("Yinka Banjo", "London", 29)
+#Meta methods
+def set_player_name():
+    return input("\nWhat is your name Warrior?\n")
 
-print("Hello New World")
+def set_player_location():
+    return input("\nWhere are you from Warrior?\n")
+
+def set_player_age():
+    return int(input("\nAnd how old are you Warrior?\n"))
+
+#Main flow
+test_player = Player(set_player_name(), set_player_location(), set_player_age())
+
+print("\nHello New World\n")
 print(test_player)
 
