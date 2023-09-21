@@ -6,6 +6,20 @@ def dice_roll():
     dice_roll_outcome = random.randint(1,6)
     return dice_roll_outcome
 
+def calc_winner(player_x, player_y):
+
+    if (player_x.int_player_hp > player_y.int_player_hp):
+        battle_ranking = [player_x, player_y]
+        return battle_ranking
+    else:
+        battle_ranking = [player_y, player_x]
+        return battle_ranking
+
+
+
+
+
+
 def pvp(player_x, player_y, round_counter):
 
     #Declare the power of the attacking player; declare the power of the defending player

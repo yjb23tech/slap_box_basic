@@ -15,6 +15,9 @@ class Player:
     def __str__(self):
         return (f"Warrior stats: Name - {self.str_player_name} Location - {self.str_player_location} Age - {self.int_player_age}")
     
+    def int_hp_status_check(self):
+        return (self.int_player_hp)
+
     def int_launch_atk(self):
         self.int_player_atk_pwr = random.randint(1,20)
         return self.int_player_atk_pwr
