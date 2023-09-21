@@ -9,12 +9,21 @@ def pvp(player_x, player_y, round_counter):
 
     if (player_x.int_player_atk_pwr > player_y.int_player_def_pwr):
         print("Atk wins\n")
+        int_hp_damage = player_x.int_player_atk_pwr - player_y.int_player_def_pwr
+        print(f"The resulting damage from {player_x.str_player_name} is {int_hp_damage}")
+        print(f"{player_y.str_player_name} loses -{int_hp_damage} worth of hp")
+        player_y.int_player_hp = player_y.int_player_hp - int_hp_damage
     elif (player_x.int_player_atk_pwr < player_y.int_player_def_pwr):
         print("Def wins\n")
     elif (player_x.int_player_atk_pwr == player_y.int_player_def_pwr):
         print("Tie Tie Tie\n")
     else:
         print("Should never be triggered")
+    
+    print(f"This is the current standing at the end of Round {round_counter + 1}:")
+    print(f"{player_x.str_player_name} has a health bar of {player_x.int_player_hp}")
+    print(f"{player_y.str_player_name} has a health bar of {player_y.int_player_hp}\n\n")
+
 
 
 
